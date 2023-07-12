@@ -6,6 +6,8 @@ public class Practice1 {
 		
 		
 		System.out.println("HI hello hiiii hyd ");
+		
+		
 	}
 
 
