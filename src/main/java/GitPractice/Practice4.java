@@ -9,6 +9,7 @@ public class Practice4 {
 		int res=n+q;
 		
 		System.out.println("the sum is"+res);
+		
 	}
 
 }
