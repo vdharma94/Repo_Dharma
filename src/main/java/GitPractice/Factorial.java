@@ -11,6 +11,8 @@ public class Factorial {
 			s=s*i;	
 		}
 		System.out.println("The of"+n+" "+"is"+" "+s);
+		
+		System.out.println(s);
 
 	}
 
