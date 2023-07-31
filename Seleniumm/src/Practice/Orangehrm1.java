@@ -95,9 +95,13 @@ public class Orangehrm1 {
 		By by_reports=By.xpath("//li[@class='oxd-topbar-body-nav-tab --visited']//a[@class='oxd-topbar-body-nav-tab-item']");
 		WebElement ele_reports=d.findElement(by_reports);
 		Thread.sleep(2000);
-		ele_reports.sendKeys("123");
+		ele_reports.click();
 		
-		
+		Thread.sleep(2000);
+		By by_reportname=By.xpath("//input[@placeholder='Type for hints...']");
+		WebElement ele_reportname=d.findElement(by_reportname);
+		Thread.sleep(2000);
+		ele_reportname.sendKeys("chinna");
 		
 
 	}
