@@ -65,17 +65,19 @@ public class orangehrm {
 		Thread.sleep(2000);
 		ele_lastname.sendKeys("rao");
 		
+		
+		
 		Thread.sleep(2000);
 		By by_nickname=By.xpath("(//input[@class='oxd-input oxd-input--active'])[2]");
 		WebElement ele_nickname=d.findElement(by_nickname);
 		Thread.sleep(2000);
 		ele_nickname.sendKeys("r");
 		
-//		Thread.sleep(2000);
-//		By by_employeeid=By.xpath("(//*[@class='oxd-input oxd-input--active'])[3]");
-//		WebElement ele_employeeid=d.findElement(by_employeeid);
-//		Thread.sleep(2000);
-//		ele_employeeid.sendKeys("0024");
+		Thread.sleep(2000);
+		By by_employeeid=By.xpath("(//*[@class='oxd-input oxd-input--active'])[3]");
+		WebElement ele_employeeid=d.findElement(by_employeeid);
+		Thread.sleep(2000);
+		ele_employeeid.sendKeys("0024");
 		
 		Thread.sleep(2000);
 		By by_otherid=By.xpath("(//*[@class='oxd-input oxd-input--active'])[4]");
