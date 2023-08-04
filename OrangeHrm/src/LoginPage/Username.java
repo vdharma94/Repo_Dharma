@@ -19,7 +19,6 @@ public class Username extends Base{
 	public static void username()
 	{
 		ele_email.sendKeys("Admin");
-		System.out.println("hi");
 	}
 	public static void pwd()
 	{

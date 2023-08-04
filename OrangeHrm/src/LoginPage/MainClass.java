@@ -16,6 +16,7 @@ public class MainClass {
 		Thread.sleep(2000);
 		Username.pwd();
 		Username.button();
+		
 		Myinfo.lastname();
 		Myinfo.middlename();
 		Myinfo.name();
