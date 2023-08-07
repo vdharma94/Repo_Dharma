@@ -2,6 +2,10 @@ INDEX VERSION 1.132+C:\Repo_Dharma\Repo_Dharma\.metadata\.plugins\org.eclipse.jd
 3349810037.index
 1254633084.index
 3908143662.index
+<<<<<<< Updated upstream
+=======
+1193319302.index
+>>>>>>> Stashed changes
 1865797976.index
 1444918965.index
 2236601107.index
