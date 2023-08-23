@@ -9,8 +9,8 @@ public class Profile extends Base {
 	static By by_profile=By.xpath("//a[text()='Profile']");
 	static By by_logo=By.xpath("//a[@id='w3-logo']");
 	
-	public static WebElement ele_frame()
-	{
+	public static  WebElement ele_frame()
+	{ 
 		WebElement ele_frame=d.findElement(by_frame);
 		System.out.println(ele_frame);
 		d.switchTo().frame(ele_frame);
@@ -32,14 +32,15 @@ public class Profile extends Base {
 		d.switchTo().frame(ele_frames);
 		
 		return ele_frames;
-	}
-	
+	}	
 	
 	public static WebElement ele_logo()
 	{
 		WebElement ele_logo=d.findElement(by_logo);
 		return ele_logo;
 	}
+	
+	
 	
 	public static void profile()
 	{

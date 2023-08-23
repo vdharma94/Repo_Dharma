@@ -32,18 +32,14 @@ public class Booking_com {
 
 		Set<String> child=d.getWindowHandles();
 
-		String S="s";
-
 		for(String childwindow:child )  
 		{
 			if(!parentwindow.equals(childwindow))
 
 			{
-				S=d.getWindowHandle();
+				
 				d.switchTo().window(childwindow);
 				System.out.println(d.getTitle());
-
-				System.out.println(S);
 
 			}
 		}
@@ -61,29 +57,21 @@ public class Booking_com {
 		Set<String> child1=d.getWindowHandles();
 
 		d.switchTo().window(parentwindow);
-
-				for(String childwindow1:child1 )  
-				{
-
-						if(!childwindow1.equals(S))
-						{
+		String[] str=child1.toArray(new String[child1.size()]);
+		d.switchTo().window(str[2]);
 		
-						d.switchTo().window(childwindow1);	
-						if(!childwindow1.equals(parentwindow))
-						{
-						
-							Thread.sleep(2000);
-							By by_reg1=By.xpath("//span[text()='Register']");
-							WebElement ele_reg1=d.findElement(by_reg1);
-							ele_reg1.click();
-						}	
-					}
-				}
+		Thread.sleep(2000);
+		By by_reg1=By.xpath("//span[text()='Register']");
+		WebElement ele_reg1=d.findElement(by_reg1);
+		ele_reg1.click();
 
-		
-		}
+
+
+
 
 	}
+
+}
 
 
 
