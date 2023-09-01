@@ -33,6 +33,7 @@ public class Orangehrm1 {
 
 		Thread.sleep(2000);
 		By by_PIM=By.xpath("//span[text()='PIM']");
+		Thread.sleep(2000);
 		WebElement ele_PIM=d.findElement(by_PIM);
 		Thread.sleep(2000);
 		ele_PIM.click();
@@ -89,6 +90,7 @@ public class Orangehrm1 {
 		By by_empid=By.xpath("(//input[@class='oxd-input oxd-input--active'])[2]");
 		WebElement ele_empid=d.findElement(by_empid);
 		Thread.sleep(2000);
+		ele_empid.clear();
 		ele_empid.sendKeys("123");
 		
 		
